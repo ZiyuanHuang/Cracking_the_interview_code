@@ -17,8 +17,11 @@ def compressedStr(string):
 		num = 1
 	result += string[index - 1]
 	result += str(num)
+	lengthnew = len(result)
+	if length < lengthnew:
+		return string
 	return result
-string = compressedStr( 'aabcccccaaa' )
+string = compressedStr( 'abc' )
 print( string )
 
 
